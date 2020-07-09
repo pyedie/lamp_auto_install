@@ -6,7 +6,7 @@ LAMP stands for Linux, Apache, MySQL, PHP.
 ### Installation
 
 ```
-wget https://github.com/MaeveLaOuf/lamp_auto_install/blob/master/lamp_auto_install.sh
+wget https://raw.githubusercontent.com/MaeveLaOuf/lamp_auto_install/master/lamp_auto_install.sh
 chmod +x lamp_auto_install.sh
 ```
 
