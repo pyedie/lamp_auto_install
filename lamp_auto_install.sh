@@ -32,19 +32,19 @@ sleep 5
 clear
 echo "${BLUE}Packets update${RESET}"
 sleep 2
-apt update
+apt update -y
 
 clear
 
 echo "${BLUE}Installing packets needed${RESET}"
 sleep 2
-apt install wget apt-transport-https lsb-release ca-certificates
+apt install wget apt-transport-https lsb-release ca-certificates -y
 
 clear
 
 echo "${BLUE}Installing Apache${RESET}"
 sleep 2
-apt install apache2
+apt install apache2 -y
 
 clear
 
@@ -53,14 +53,14 @@ sleep 2
 wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list
 apt update -y
-apt install php7.4
-apt search php7.4
+apt install php7.4 -y
+apt search php7.4 -y
 
 clear
 
 echo "${BLUE}Installing most used php modules${RESET}"
 sleep 2
-apt install php7.4-cli php7.4-common php7.4-json php7.4-opcache php7.4-mysql php7.4-zip php7.4-fpm php7.4-mbstring
+apt install php7.4-cli php7.4-common php7.4-json php7.4-opcache php7.4-mysql php7.4-zip php7.4-fpm php7.4-mbstring -y
 
 clear
 
@@ -72,8 +72,8 @@ clear
 
 echo "${BLUE}Installing MySQL and phpMyAdmin${RESET}"
 sleep 2
-apt install mysql-server
-apt install phpmyadmin
+apt install mysql-server -y
+apt install phpmyadmin -y
 ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 
 clear
