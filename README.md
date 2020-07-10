@@ -1,6 +1,6 @@
 # Lamp Auto Install
 
-*LAT*  is a **installer** for standard build for web servers.
+*LAI*  is a **installer** for standard build for web servers.
 LAMP stands for Linux, Apache, MySQL, PHP.
 
 ### Installation
