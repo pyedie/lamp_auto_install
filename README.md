@@ -17,6 +17,10 @@ To run the installer, you must have **ADMIN** privileges (root)
 ./lamp_auto_install.sh
 ```
 
+### Todos
+
+- Auto create a user in database
+
 License
 ----
 
