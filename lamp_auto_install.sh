@@ -60,7 +60,7 @@ clear
 
 echo "${BLUE}Installing most used php modules${RESET}"
 sleep 2
-apt install php7.4-cli php7.4-common php7.4-json php7.4-opcache php7.4-mysql php7.4-zip php7.4-fpm php7.4-mbstring -y
+apt install php7.4-cli php7.4-common php7.4-json php7.4-opcache php7.4-mysql php7.4-zip php7.4-fpm php7.4-mbstring php7.4-gettext -y
 
 clear
 
@@ -72,9 +72,11 @@ clear
 
 echo "${BLUE}Installing MySQL and phpMyAdmin${RESET}"
 sleep 2
-apt install mysql-server -y
+apt install mariadb-server mariadb-client -y
 apt install phpmyadmin -y
-ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+phpenmod mbstring
+systemctl restart apache2
+mysql_secure_installation
 
 clear
 
