@@ -76,7 +76,7 @@ apt install mariadb-server mariadb-client -y
 apt install phpmyadmin -y
 phpenmod mbstring
 systemctl restart apache2
-#ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+mysql_secure_installation
 
 clear
 
